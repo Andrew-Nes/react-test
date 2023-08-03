@@ -12,10 +12,10 @@ function Counter() {
     setCount(count + 1);
   }
 
-  return(
+  return (
   <div className="counter">
     <button onClick={minus}>-</button>
-    <input type="text" value={count}></input> 
+    <input type="text" value={count} style={{ width: '50px', textAlign: 'center'}}></input> 
     <button onClick={plus}>+</button>
   </div>
   )
