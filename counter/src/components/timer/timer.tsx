@@ -13,11 +13,11 @@ function TimeCounter() {
   function tick() {
     countSeconds(seconds + 1);
     if(seconds > 59){
-      countSeconds(seconds - 60);
+      countSeconds(0);
       countMinutes(minutes + 1);
     }
     if (minutes > 59){
-      countMinutes(minutes - 60);
+      countMinutes(0);
     }
   }
 
@@ -40,7 +40,6 @@ function TimeCounter() {
         <button onClick={on}>Start</button>
         <button onClick={off}>Pause</button>
     </div>
-    
     </div>
   )
 }
